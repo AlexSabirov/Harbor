@@ -443,3 +443,75 @@ select {
   -ms-grid-column: 2;
   grid-area: platform;
 }
+
+.mission {
+  background: #28514f;
+}
+
+.mission__container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mission__logo {
+  position: absolute;
+  top: -98px;
+}
+
+.mission__title {
+  margin-top: 260px;
+  margin-bottom: 35px;
+  font-family: DM Serif Display;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  max-width: 600px;
+  color: #ffffff;
+}
+
+.mission__text {
+  font-family: Source Sans Pro;
+  font-size: 21px;
+  line-height: 32px;
+  text-align: center;
+  color: #ffffff;
+  max-width: 610px;
+  margin-bottom: 60px;
+}
+
+.mission__button {
+  background: #ffffff;
+  border-radius: 50px;
+  margin-bottom: 320px;
+  padding: 14px 32px;
+  text-decoration: none;
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: #28514f;
+}
+
+.mission__button:hover {
+  background: #b4b4b4;
+}
+
+.mission__button:active {
+  opacity: 0.3;
+}
+
+.mission__image-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
