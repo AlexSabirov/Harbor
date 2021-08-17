@@ -355,3 +355,91 @@ select {
 .item-4 {
   background: #f4f0e9;
 }
+
+.reviews__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 190px;
+}
+
+.reviews__container::after {
+  content: "";
+  width: 25px;
+  height: 14px;
+  background: #008c6e;
+  border: 2px solid #008c6e;
+  border-radius: 30px;
+  position: absolute;
+  bottom: -50px;
+}
+
+.reviews__title {
+  margin-bottom: 35px;
+}
+
+.reviews__subtitle {
+  margin-bottom: 100px;
+}
+
+.reviews__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.reviews__item {
+  max-width: 300px;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 32px 45px 32px 32px;
+}
+
+.reviews__text {
+  font-family: Merriweather;
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.reviews__stars {
+  margin-bottom: 25px;
+}
+
+.reviews__user {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px auto;
+      grid-template-columns: 50px auto;
+      grid-template-areas: "logo user" "logo platform";
+}
+
+.user__logo {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: logo;
+}
+
+.user__name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: user;
+}
+
+.user__platform {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: platform;
+}
