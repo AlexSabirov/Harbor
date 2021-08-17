@@ -37,7 +37,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  background: #e5e5e5;
+  background: #f9f7f4;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -84,8 +84,29 @@ select {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1230px;
   margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  font-family: "DM Serif Display";
+  font-size: 48px;
+  line-height: 116%;
+  text-align: center;
+  color: #28514f;
+  max-width: 656px;
+}
+
+.subtitle {
+  font-family: Source Sans Pro;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #65727b;
+  max-width: 552px;
 }
 
 .header__container {
@@ -93,6 +114,7 @@ select {
   display: grid;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
+  margin-bottom: 120px;
 }
 
 .header__logo {
@@ -137,4 +159,69 @@ select {
 .header__link:active {
   background: rgba(144, 164, 179, 0.2);
   opacity: 0.6;
+}
+
+.downloads__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.downloads__title {
+  margin-bottom: 35px;
+}
+
+.downloads__subtitle {
+  margin-bottom: 40px;
+}
+
+.downloads__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 110px;
+}
+
+.downloads__button {
+  text-decoration: none;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 32px;
+  border-radius: 50px;
+  background: #28514f;
+  height: 56px;
+  width: 156px;
+}
+
+.downloads__button:last-child {
+  margin-right: 0;
+}
+
+.downloads__button img {
+  margin-right: 12px;
+}
+
+.downloads__button p {
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.downloads__image {
+  -webkit-transform: translateX(-40px);
+          transform: translateX(-40px);
 }

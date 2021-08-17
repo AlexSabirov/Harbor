@@ -35,7 +35,7 @@ body {
 	scroll-behavior: smooth;
 	text-rendering: optimizeSpeed;
 	line-height: 1.5;
-	background: #e5e5e5;
+	background: #f9f7f4;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -79,14 +79,35 @@ select {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1230px;
 	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.title {
+	font-family: "DM Serif Display";
+	font-size: 48px;
+	line-height: 116%;
+	text-align: center;
+	color: #28514f;
+	max-width: 656px;
+}
+.subtitle {
+	font-family: Source Sans Pro;
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 32px;
+	letter-spacing: 0em;
+	text-align: center;
+	color: #65727b;
+	max-width: 552px;
 }
 
 .header {
 	&__container {
 		display: grid;
 		grid-template-columns: auto auto;
+		margin-bottom: 120px;
 	}
 
 	&__logo {
@@ -122,5 +143,56 @@ select {
 			background: rgba(144, 164, 179, 0.2);
 			opacity: 0.6;
 		}
+	}
+}
+.downloads {
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__title {
+		margin-bottom: 35px;
+	}
+
+	&__subtitle {
+		margin-bottom: 40px;
+	}
+
+	&__buttons {
+		display: flex;
+		margin-bottom: 110px;
+	}
+
+	&__button {
+		text-decoration: none;
+		margin-right: 20px;
+		&:last-child {
+			margin-right: 0;
+		}
+		display: flex;
+		padding: 16px 32px;
+		border-radius: 50px;
+		background: #28514f;
+		height: 56px;
+		width: 156px;
+		img {
+			margin-right: 12px;
+		}
+		p {
+			font-family: Source Sans Pro;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 23px;
+			letter-spacing: 0em;
+			color: #ffffff;
+			white-space: nowrap;
+		}
+	}
+
+	&__image {
+		transform: translateX(-40px);
 	}
 }
