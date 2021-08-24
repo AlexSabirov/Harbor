@@ -498,7 +498,76 @@ select {
 			background: #aeb4b6;
 		}
 	}
+}
 
-	&__image {
+.join {
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 200px;
+		border-bottom: 2px solid rgba(165, 155, 134, 0.2);
+	}
+
+	&__title {
+		margin-bottom: 37px;
+	}
+
+	&__subtitle {
+		margin-bottom: 37px;
+	}
+
+	&__sign-up {
+		display: flex;
+		justify-content: center;
+		width: 393px;
+	}
+
+	&__comment {
+		font-family: Roboto;
+		font-size: 14px;
+		line-height: 20px;
+		color: #65727b;
+		a {
+			text-decoration: none;
+			color: #8394a0;
+		}
+	}
+}
+.sign-up {
+	&__input {
+		box-shadow: 0px 4px 0px rgba(167, 167, 167, 0.16);
+		input {
+			height: 60px;
+			width: 276px;
+			border-radius: 40px 0px 0px 40px;
+			padding: 18px 96px 18px 34px;
+			font-family: Roboto;
+			font-size: 20px;
+			line-height: 20px;
+		}
+	}
+
+	&__button {
+		box-shadow: 0px 4px 0px rgba(167, 167, 167, 0.16);
+		margin-bottom: 10px;
+		input {
+			height: 60px;
+			width: 117px;
+			background: #28514f;
+			border-radius: 0px 40px 40px 0px;
+			text-align: center;
+			text-transform: uppercase;
+			color: #ffffff;
+			padding: 12px 30px 12px 12px;
+			position: relative;
+			&::after {
+				position: absolute;
+				content: "";
+				background-color: red;
+				width: 10px;
+				height: 2px;
+			}
+		}
 	}
 }
