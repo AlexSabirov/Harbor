@@ -93,7 +93,7 @@ select {
 	max-width: 656px;
 }
 .subtitle {
-	font-family: Source Sans Pro;
+	font-family: "Source Sans Pro";
 	font-size: 21px;
 	font-weight: 400;
 	line-height: 32px;
@@ -111,7 +111,7 @@ select {
 	}
 
 	&__logo {
-		font-family: DM Serif Display;
+		font-family: "DM Serif Display";
 		font-size: 48px;
 		font-weight: 400;
 		line-height: 56px;
@@ -129,7 +129,7 @@ select {
 		padding: 7px 20px;
 		border-radius: 40px;
 		a {
-			font-family: Roboto;
+			font-family: "Roboto";
 			font-size: 16px;
 			font-weight: 400;
 			line-height: 23px;
@@ -192,7 +192,7 @@ select {
 			margin-right: 12px;
 		}
 		p {
-			font-family: Source Sans Pro;
+			font-family: "Source Sans Pro";
 			font-size: 16px;
 			font-style: normal;
 			font-weight: 400;
@@ -267,7 +267,7 @@ select {
 
 	&__subtitle {
 		margin-bottom: 50px;
-		font-family: Roboto;
+		font-family: "Roboto";
 		font-size: 40px;
 		font-weight: 700;
 		line-height: 47px;
@@ -275,7 +275,7 @@ select {
 
 	&__text {
 		margin-bottom: 35px;
-		font-family: Roboto;
+		font-family: "Roboto";
 		font-size: 17px;
 		font-weight: 400;
 		line-height: 24px;
@@ -342,7 +342,7 @@ select {
 	}
 
 	&__text {
-		font-family: Merriweather;
+		font-family: "Merriweather";
 		font-size: 13px;
 		line-height: 20px;
 		margin-bottom: 20px;
@@ -391,7 +391,7 @@ select {
 	&__title {
 		margin-top: 260px;
 		margin-bottom: 35px;
-		font-family: DM Serif Display;
+		font-family: "DM Serif Display";
 		font-size: 48px;
 		line-height: 56px;
 		text-align: center;
@@ -400,7 +400,7 @@ select {
 	}
 
 	&__text {
-		font-family: Source Sans Pro;
+		font-family: "Source Sans Pro";
 		font-size: 21px;
 		line-height: 32px;
 		text-align: center;
@@ -415,7 +415,7 @@ select {
 		margin-bottom: 320px;
 		padding: 14px 32px;
 		text-decoration: none;
-		font-family: Source Sans Pro;
+		font-family: "Source Sans Pro";
 		font-size: 16px;
 		line-height: 23px;
 		text-align: center;
@@ -455,7 +455,7 @@ select {
 	}
 
 	&__title {
-		font-family: DM Serif Display;
+		font-family: "DM Serif Display";
 		font-size: 40px;
 		font-weight: 400;
 		line-height: 47px;
@@ -485,7 +485,7 @@ select {
 			margin-right: 12px;
 		}
 		p {
-			font-family: Source Sans Pro;
+			font-family: "Source Sans Pro";
 			font-size: 16px;
 			font-style: normal;
 			font-weight: 400;
@@ -524,7 +524,7 @@ select {
 	}
 
 	&__comment {
-		font-family: Roboto;
+		font-family: "Roboto";
 		font-size: 14px;
 		line-height: 20px;
 		color: #65727b;
@@ -542,7 +542,7 @@ select {
 			width: 276px;
 			border-radius: 40px 0px 0px 40px;
 			padding: 18px 96px 18px 34px;
-			font-family: Roboto;
+			font-family: "Roboto";
 			font-size: 20px;
 			line-height: 20px;
 		}
@@ -568,6 +568,91 @@ select {
 				width: 10px;
 				height: 2px;
 			}
+		}
+	}
+}
+
+.footer {
+	&__container {
+		padding: 70px 0 50px 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__logo {
+		font-family: "DM Serif Display";
+		font-size: 48px;
+		font-weight: 400;
+		line-height: 56px;
+		letter-spacing: 0em;
+		color: #28514f;
+		margin-bottom: 10px;
+	}
+
+	&__copyright {
+		font-family: "Roboto";
+		font-size: 13px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 20px;
+		letter-spacing: 0em;
+		text-align: left;
+		margin-bottom: 10px;
+	}
+
+	&__navigation {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	&__link {
+		a {
+			font-family: "Roboto";
+			font-size: 13px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 20px;
+			letter-spacing: 0em;
+			text-align: left;
+			color: #28514f;
+		}
+	}
+
+	&__menu {
+		padding-top: 35px;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&__page {
+		a {
+			font-family: "Roboto";
+			font-size: 19px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 20px;
+			letter-spacing: 0em;
+			text-align: left;
+			text-decoration: none;
+			color: #65727b;
+		}
+	}
+
+	&__society {
+		padding-top: 35px;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__button {
+		margin-right: 30px;
+		&:last-child {
+			margin-right: 0;
 		}
 	}
 }
