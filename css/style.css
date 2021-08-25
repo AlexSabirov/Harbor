@@ -89,7 +89,7 @@ select {
   padding: 0 15px;
 }
 
-.title {
+.title h2 {
   font-family: "DM Serif Display";
   font-size: 48px;
   line-height: 116%;
@@ -98,7 +98,7 @@ select {
   max-width: 656px;
 }
 
-.subtitle {
+.subtitle h3 {
   font-family: "Source Sans Pro";
   font-size: 21px;
   font-weight: 400;
@@ -107,6 +107,22 @@ select {
   text-align: center;
   color: #65727b;
   max-width: 552px;
+}
+
+.button-noactive {
+  background: #aeb4b6;
+}
+
+.button-active {
+  background: #28514f;
+}
+
+.button-active:hover {
+  opacity: 0.6;
+}
+
+.button-active:active {
+  opacity: 0.3;
 }
 
 .header__container {
@@ -124,6 +140,7 @@ select {
   line-height: 56px;
   letter-spacing: 0em;
   color: #28514f;
+  cursor: default;
 }
 
 .header__nav {
@@ -208,7 +225,6 @@ select {
   display: flex;
   padding: 16px 32px;
   border-radius: 50px;
-  background: #28514f;
   height: 56px;
   width: 156px;
 }
@@ -548,6 +564,7 @@ select {
   line-height: 47px;
   margin-bottom: 33px;
   max-width: 350px;
+  color: #333333;
 }
 
 .step__buttons {
@@ -566,7 +583,6 @@ select {
   display: flex;
   padding: 16px 32px;
   border-radius: 50px;
-  background: #28514f;
   height: 56px;
   width: 156px;
 }
@@ -588,10 +604,6 @@ select {
   letter-spacing: 0em;
   color: #ffffff;
   white-space: nowrap;
-}
-
-.step__button.button-noactive {
-  background: #aeb4b6;
 }
 
 .join__container {
@@ -639,6 +651,15 @@ select {
   color: #8394a0;
 }
 
+.join__comment a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+}
+
+.join__comment a:active {
+  opacity: 0.3;
+}
+
 .sign-up__input {
   -webkit-box-shadow: 0px 4px 0px rgba(167, 167, 167, 0.16);
           box-shadow: 0px 4px 0px rgba(167, 167, 167, 0.16);
@@ -670,6 +691,15 @@ select {
   color: #ffffff;
   padding: 12px 30px 12px 12px;
   position: relative;
+  cursor: pointer;
+}
+
+.sign-up__button input:hover {
+  opacity: 0.7;
+}
+
+.sign-up__button input:active {
+  opacity: 0.3;
 }
 
 .sign-up__button input::after {
@@ -706,6 +736,7 @@ select {
   letter-spacing: 0em;
   color: #28514f;
   margin-bottom: 10px;
+  cursor: default;
 }
 
 .footer__copyright {
@@ -737,6 +768,14 @@ select {
   color: #28514f;
 }
 
+.footer__link a:hover {
+  opacity: 0.7;
+}
+
+.footer__link a:active {
+  opacity: 0.3;
+}
+
 .footer__menu {
   padding-top: 35px;
   display: -webkit-box;
@@ -756,6 +795,17 @@ select {
   text-align: left;
   text-decoration: none;
   color: #65727b;
+  padding: 7px 20px;
+  border-radius: 40px;
+}
+
+.footer__page a:hover {
+  background: rgba(101, 114, 123, 0.2);
+}
+
+.footer__page a:active {
+  background: rgba(144, 164, 179, 0.2);
+  opacity: 0.6;
 }
 
 .footer__society {
@@ -774,4 +824,18 @@ select {
 
 .footer__button:last-child {
   margin-right: 0;
+}
+
+.footer__button img {
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.footer__button img:hover {
+  background: rgba(101, 114, 123, 0.2);
+}
+
+.footer__button img:active {
+  background: rgba(144, 164, 179, 0.2);
+  opacity: 0.6;
 }
