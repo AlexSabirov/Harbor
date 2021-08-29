@@ -85,6 +85,12 @@ select {
 		text-align: center;
 		color: #28514f;
 		max-width: 656px;
+		@media (max-width: 769px) {
+			font-size: 36px;
+		}
+		@media (max-width: 480px) {
+			font-size: 24px;
+		}
 	}
 }
 .subtitle {
@@ -97,6 +103,12 @@ select {
 		text-align: center;
 		color: #65727b;
 		max-width: 552px;
+		@media (max-width: 769px) {
+			font-size: 24px;
+		}
+		@media (max-width: 480px) {
+			font-size: 18px;
+		}
 	}
 }
 
@@ -138,6 +150,10 @@ select {
 				background: #f9f7f4;
 			}
 		}
+		@media (max-width: 480px) {
+			height: 65px;
+			padding: 10px;
+		}
 	}
 
 	&__logo {
@@ -149,12 +165,15 @@ select {
 		letter-spacing: 0em;
 		color: #28514f;
 		cursor: default;
+		@media (max-width: 480px) {
+			font-size: 36px;
+		}
 	}
 
 	&__burger {
 		display: none;
 		@media (max-width: 769px) {
-			margin: 30px 30px 0 0;
+			margin: 15px 30px 0 0;
 			z-index: 10;
 			display: block;
 			position: relative;
@@ -203,6 +222,9 @@ select {
 					transform: scale(0);
 				}
 			}
+		}
+		@media (max-width: 480px) {
+			margin: 15px 15px 0 0;
 		}
 	}
 
@@ -279,14 +301,24 @@ select {
 			position: absolute;
 			bottom: -100px;
 		}
+		@media (max-width: 769px) {
+			padding-top: 100px;
+			margin-bottom: 150px;
+		}
 	}
 
 	&__title {
 		margin-bottom: 35px;
+		@media (max-width: 769px) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__subtitle {
 		margin-bottom: 40px;
+		@media (max-width: 769px) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__buttons {
@@ -338,7 +370,10 @@ select {
 			height: 3px;
 			background: rgba(27, 31, 43, 0.12);
 			position: absolute;
-			bottom: -170px;
+			bottom: -85px;
+		}
+		@media (max-width: 769px) {
+			margin-bottom: 150px;
 		}
 	}
 
@@ -362,6 +397,9 @@ select {
 		&:last-child {
 			margin-bottom: 0;
 		}
+		@media (max-width: 769px) {
+			flex-direction: column;
+		}
 	}
 
 	&__item {
@@ -372,10 +410,18 @@ select {
 		&:last-child {
 			margin-right: 0;
 		}
+		@media (max-width: 769px) {
+			margin-right: 0;
+			margin-bottom: 10px;
+			padding: 30px 25px;
+		}
 	}
 
 	&__image {
 		margin-bottom: 40px;
+		@media (max-width: 769px) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__icon {
@@ -388,6 +434,11 @@ select {
 		font-size: 40px;
 		font-weight: 700;
 		line-height: 47px;
+		@media (max-width: 769px) {
+			margin-bottom: 20px;
+			font-size: 24px;
+			line-height: 28px;
+		}
 	}
 
 	&__text {
@@ -396,6 +447,9 @@ select {
 		font-size: 17px;
 		font-weight: 400;
 		line-height: 24px;
+		@media (max-width: 769px) {
+			margin-bottom: 20px;
+		}
 	}
 }
 .row-top {
@@ -442,12 +496,18 @@ select {
 
 	&__subtitle {
 		margin-bottom: 100px;
+		@media (max-width: 769px) {
+			margin-bottom: 50px;
+		}
 	}
 
 	&__items {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 20px;
+		@media (max-width: 769px) {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	&__item {
@@ -456,6 +516,9 @@ select {
 		border-radius: 20px;
 		border: 1px solid rgba(0, 0, 0, 0.1);
 		padding: 32px 45px 32px 32px;
+		@media (max-width: 769px) {
+			max-width: 100%;
+		}
 	}
 
 	&__text {
@@ -514,6 +577,13 @@ select {
 		text-align: center;
 		max-width: 600px;
 		color: #ffffff;
+		@media (max-width: 769px) {
+			margin-top: 110px;
+			font-size: 36px;
+		}
+		@media (max-width: 480px) {
+			font-size: 28px;
+		}
 	}
 
 	&__text {
@@ -524,6 +594,10 @@ select {
 		color: #ffffff;
 		max-width: 610px;
 		margin-bottom: 60px;
+		@media (max-width: 769px) {
+			font-size: 18px;
+			margin-bottom: 30px;
+		}
 	}
 
 	&__button {
@@ -543,6 +617,12 @@ select {
 		&:active {
 			opacity: 0.3;
 		}
+		@media (max-width: 769px) {
+			margin-bottom: 160px;
+		}
+		@media (max-width: 480px) {
+			margin-bottom: 120px;
+		}
 	}
 
 	&__image-footer {
@@ -556,19 +636,45 @@ select {
 .step {
 	&__container {
 		margin-bottom: 200px;
+		@media (max-width: 769px) {
+			margin-bottom: 120px;
+		}
+		@media (max-width: 480px) {
+			margin-bottom: 80px;
+		}
 	}
 
 	&__body {
 		background: #f8e6be;
 		max-width: 940px;
 		margin: 0 auto;
-		display: flex;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		overflow: hidden;
+		@media (max-width: 769px) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 
 	&__downloads {
 		display: flex;
 		flex-direction: column;
-		padding: 118px 40px 45px 90px;
+		justify-content: flex-start;
+		padding: 118px 0 45px 90px;
+		@media (max-width: 769px) {
+			padding: 75px 0 35px 30px;
+		}
+		@media (max-width: 480px) {
+			padding: 25px 0 25px 15px;
+		}
+	}
+
+	&__image {
+		img {
+			max-width: 420px;
+		}
 	}
 
 	&__title {
@@ -579,17 +685,25 @@ select {
 		margin-bottom: 33px;
 		max-width: 350px;
 		color: #333333;
+		@media (max-width: 769px) {
+			h4 {
+				font-size: 32px;
+			}
+		}
 	}
 
 	&__buttons {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 29px;
+		display: flex;
+		@media (max-width: 769px) {
+		}
 	}
 
 	&__button {
 		text-decoration: none;
 		margin-right: 20px;
+		@media (max-width: 769px) {
+			margin-right: 5px;
+		}
 		&:last-child {
 			margin-right: 0;
 		}
@@ -621,6 +735,12 @@ select {
 		align-items: center;
 		padding-bottom: 200px;
 		border-bottom: 2px solid rgba(165, 155, 134, 0.2);
+		@media (max-width: 769px) {
+			padding-bottom: 100px;
+		}
+		@media (max-width: 480px) {
+			padding-bottom: 50px;
+		}
 	}
 
 	&__title {
@@ -666,6 +786,10 @@ select {
 			font-family: "Roboto";
 			font-size: 20px;
 			line-height: 20px;
+			@media (max-width: 480px) {
+				width: 230px;
+				padding: 18px 50px 18px 34px;
+			}
 		}
 	}
 
@@ -689,13 +813,6 @@ select {
 			&:active {
 				opacity: 0.3;
 			}
-			&::after {
-				position: absolute;
-				content: "";
-				background-color: red;
-				width: 10px;
-				height: 2px;
-			}
 		}
 	}
 }
@@ -705,6 +822,10 @@ select {
 		padding: 70px 0 50px 0;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
+		@media (max-width: 769px) {
+			padding: 25px 25px 25px 25px;
+			grid-template-columns: 1fr;
+		}
 	}
 
 	&__info {
